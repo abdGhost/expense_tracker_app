@@ -1,16 +1,11 @@
+import 'package:expense_tracker/expenses.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: HomeScreen(),
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Expenses(),
     ),
   );
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
 }
