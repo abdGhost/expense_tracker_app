@@ -29,6 +29,7 @@ class _NewExpenseState extends State<NewExpense> {
     });
   }
 
+// What is this line do?
   @override
   void dispose() {
     _titleController.dispose();
