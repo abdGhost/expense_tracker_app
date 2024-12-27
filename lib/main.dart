@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
+import 'widgets/expenses.dart';
 
 void main() {
   runApp(
     MaterialApp(
-      home: HomeScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+      home: Expenses(), // Ensure this is the root widget inside MaterialApp
     ),
   );
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
 }
